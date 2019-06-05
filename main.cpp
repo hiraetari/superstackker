@@ -52,6 +52,11 @@ public:
         else
             cout << "Stack is empty." << endl;
     }
+	
+
+    ~Stack() {
+	delete []stack;
+    }
 };
 
 int main() {
